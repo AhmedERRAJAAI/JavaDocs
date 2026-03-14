@@ -1,4 +1,4 @@
-package output;
+package _08_output;
 
 public class Printf {
     public static void main(String[] args) {

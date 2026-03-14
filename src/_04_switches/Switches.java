@@ -1,4 +1,4 @@
-package switches;
+package _04_switches;
 
 public class Switches {
     public static void main(String[] args) {

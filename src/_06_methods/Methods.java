@@ -1,4 +1,4 @@
-package methods;
+package _06_methods;
 
 public class Methods {
 

@@ -8,40 +8,40 @@ A structured collection of Java fundamentals — one concept per package, each w
 
 ```
 src/
-├── datatypes/
+├── _01_datatypes/
 │   ├── DataTypes.java          — Primitives, reference types, casting, autoboxing
 │   └── DataTypes.md
-├── operators/
+├── _02_operators/
 │   ├── ArithmeticOperators.java — Arithmetic, increment/decrement, Math class, overflow
 │   └── ArithmeticOperators.md
-├── conditionals/
+├── _03_conditionals/
 │   ├── IfStatements.java        — if / else-if / nested if, ternary, logical operators
 │   └── IfStatements.md
-├── switches/
+├── _04_switches/
 │   ├── Switches.java            — Classic switch, arrow syntax, switch expressions, enum
 │   └── Switches.md
-├── loops/
+├── _05_loops/
 │   ├── Loops.java               — for, while, do-while, for-each, break, continue
 │   └── Loops.md
-├── methods/
+├── _06_methods/
 │   ├── Methods.java             — Overloading, varargs, recursion, access modifiers
 │   └── Methods.md
-├── strings/
+├── _07_strings/
 │   ├── StringMethods.java       — Core String API, StringBuilder, split/join, immutability
 │   └── StringMethods.md
-├── output/
+├── _08_output/
 │   ├── Printf.java              — printf, String.format, format specifiers, tables
 │   └── Printf.md
-├── userinput/
+├── _09_userinput/
 │   ├── UserInput.java           — Scanner, input validation, common pitfalls
 │   └── UserInput.md
-├── packages/
+├── _10_packages/
 │   ├── Packages.java            — Package declarations, imports, static imports, access
 │   └── Packages.md
-├── collections/
+├── _11_collections/
 │   ├── Collections.java         — ArrayList, LinkedList, HashSet, TreeSet, HashMap, TreeMap, Deque, PriorityQueue
 │   └── Collections.md
-└── exercices/
+└── _12_exercices/
     └── TemperatureConverter.java — Temperature unit converter (practice exercise)
 ```
 
@@ -49,19 +49,20 @@ src/
 
 ## Concepts Covered
 
-| Package        | Key Topics |
-|----------------|-----------|
-| `datatypes`    | `byte` → `long`, `float` vs `double`, `char`, `boolean`, widening/narrowing casts, wrapper classes, autoboxing |
-| `operators`    | `+` `-` `*` `/` `%`, integer division, pre/post `++`/`--`, compound assignment (`+=` etc.), operator precedence, overflow, `Math` |
-| `conditionals` | `if`, `if-else`, `if-else-if`, nested `if`, comparison operators, `&&` `\|\|` `!`, short-circuit evaluation, ternary `? :` |
-| `switches`     | Classic `switch` with fall-through, arrow `->` syntax, switch expression, `yield`, switch on `String` and `enum` |
-| `loops`        | `for`, `while`, `do-while`, enhanced for-each, `break`, `continue`, labeled `break`, nested loops |
-| `methods`      | Defining and calling methods, return types, overloading, varargs, recursion, pass-by-value, access modifiers |
-| `strings`      | `length`, `charAt`, `substring`, `indexOf`, `replace`, `split`, `join`, `StringBuilder`, immutability |
-| `output`       | `System.out.printf`, `String.format`, format specifiers (`%s` `%d` `%f` `%e` `%x` …), width, precision, flags |
-| `userinput`    | `Scanner`, `nextLine` / `nextInt` / `nextDouble`, `hasNextInt`, newline pitfall, sentinel loops |
-| `packages`     | `package` declaration, `import`, wildcard vs specific imports, `java.lang`, static imports, sub-packages |
-| `collections`  | `ArrayList`, `LinkedList`, `HashSet`, `LinkedHashSet`, `TreeSet`, `HashMap`, `LinkedHashMap`, `TreeMap`, `ArrayDeque`, `PriorityQueue`, `Collections` utilities, immutable factories |
+| Package              | Key Topics |
+|----------------------|-----------|
+| `_01_datatypes`      | `byte` → `long`, `float` vs `double`, `char`, `boolean`, widening/narrowing casts, wrapper classes, autoboxing |
+| `_02_operators`      | `+` `-` `*` `/` `%`, integer division, pre/post `++`/`--`, compound assignment (`+=` etc.), operator precedence, overflow, `Math` |
+| `_03_conditionals`   | `if`, `if-else`, `if-else-if`, nested `if`, comparison operators, `&&` `\|\|` `!`, short-circuit evaluation, ternary `? :` |
+| `_04_switches`       | Classic `switch` with fall-through, arrow `->` syntax, switch expression, `yield`, switch on `String` and `enum` |
+| `_05_loops`          | `for`, `while`, `do-while`, enhanced for-each, `break`, `continue`, labeled `break`, nested loops |
+| `_06_methods`        | Defining and calling methods, return types, overloading, varargs, recursion, pass-by-value, access modifiers |
+| `_07_strings`        | `length`, `charAt`, `substring`, `indexOf`, `replace`, `split`, `join`, `StringBuilder`, immutability |
+| `_08_output`         | `System.out.printf`, `String.format`, format specifiers (`%s` `%d` `%f` `%e` `%x` …), width, precision, flags |
+| `_09_userinput`      | `Scanner`, `nextLine` / `nextInt` / `nextDouble`, `hasNextInt`, newline pitfall, sentinel loops |
+| `_10_packages`       | `package` declaration, `import`, wildcard vs specific imports, `java.lang`, static imports, sub-packages |
+| `_11_collections`    | `ArrayList`, `LinkedList`, `HashSet`, `LinkedHashSet`, `TreeSet`, `HashMap`, `LinkedHashMap`, `TreeMap`, `ArrayDeque`, `PriorityQueue`, `Collections` utilities, immutable factories |
+| `_12_exercices`      | Practice exercise — Temperature unit converter applying multiple concepts |
 
 ---
 
@@ -72,13 +73,10 @@ Each package is self-contained. Open the `.java` file to run and experiment with
 ### Run a file from the terminal
 
 ```bash
-# Compile
-javac src/loops/Loops.java
-
-# Run (from the src directory)
+# From the src directory
 cd src
-javac loops/Loops.java
-java loops.Loops
+javac _05_loops/Loops.java
+java _05_loops.Loops
 ```
 
 ### Run from IntelliJ IDEA
@@ -98,17 +96,17 @@ java loops.Loops
 
 ## Learning Path
 
-Follow the packages in this order for a smooth progression:
+The packages are numbered in the recommended order — just follow them top to bottom:
 
-1. `datatypes` — understand what types are available
-2. `operators` — learn to compute with those types
-3. `conditionals` — make decisions
-4. `switches` — handle multiple discrete cases
-5. `loops` — repeat operations
-6. `methods` — organise code into reusable units
-7. `strings` — work with text
-8. `output` — format and display results
-9. `userinput` — read data from the user
-10. `packages` — understand how Java organises code at scale
-11. `collections` — store, retrieve and manipulate groups of objects
-12. `exercices` — apply everything in a real exercise
+1. `_01_datatypes` — understand what types are available
+2. `_02_operators` — learn to compute with those types
+3. `_03_conditionals` — make decisions
+4. `_04_switches` — handle multiple discrete cases
+5. `_05_loops` — repeat operations
+6. `_06_methods` — organise code into reusable units
+7. `_07_strings` — work with text
+8. `_08_output` — format and display results
+9. `_09_userinput` — read data from the user
+10. `_10_packages` — understand how Java organises code at scale
+11. `_11_collections` — store, retrieve and manipulate groups of objects
+12. `_12_exercices` — apply everything in a real exercise

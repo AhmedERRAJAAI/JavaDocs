@@ -1,4 +1,4 @@
-package conditionals;
+package _03_conditionals;
 
 public class IfStatements {
     public static void main(String[] args) {

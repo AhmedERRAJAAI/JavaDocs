@@ -1,4 +1,4 @@
-package exercices;
+package _12_exercices;
 
 public class TemperatureConverter {
 

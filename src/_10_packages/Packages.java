@@ -1,4 +1,4 @@
-package packages;
+package _10_packages;
 
 // Importing a specific class from the java.util package
 import java.util.ArrayList;
