@@ -27,7 +27,5 @@ public class Main {
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println("The first number is " + numbers[0]);
 
-
-
     }
 }
