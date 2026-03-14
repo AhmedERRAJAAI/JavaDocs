@@ -41,6 +41,9 @@ src/
 ├── _11_collections/
 │   ├── Collections.java         — ArrayList, LinkedList, HashSet, TreeSet, HashMap, TreeMap, Deque, PriorityQueue
 │   └── Collections.md
+├── _13_intro_oop/
+│   ├── Classes.java             — Classes, instantiation, instance vs static fields/methods, scope, encapsulation
+│   └── Classes.md
 └── _12_exercices/
     └── TemperatureConverter.java — Temperature unit converter (practice exercise)
 ```
@@ -62,6 +65,7 @@ src/
 | `_09_userinput`      | `Scanner`, `nextLine` / `nextInt` / `nextDouble`, `hasNextInt`, newline pitfall, sentinel loops |
 | `_10_packages`       | `package` declaration, `import`, wildcard vs specific imports, `java.lang`, static imports, sub-packages |
 | `_11_collections`    | `ArrayList`, `LinkedList`, `HashSet`, `LinkedHashSet`, `TreeSet`, `HashMap`, `LinkedHashMap`, `TreeMap`, `ArrayDeque`, `PriorityQueue`, `Collections` utilities, immutable factories |
+| `_13_intro_oop`      | Classes, objects, instantiation, `new`, instance vs static fields & methods, `this`, constructors, scope (local / instance / static / block), encapsulation, `toString` |
 | `_12_exercices`      | Practice exercise — Temperature unit converter applying multiple concepts |
 
 ---
@@ -109,4 +113,5 @@ The packages are numbered in the recommended order — just follow them top to b
 9. `_09_userinput` — read data from the user
 10. `_10_packages` — understand how Java organises code at scale
 11. `_11_collections` — store, retrieve and manipulate groups of objects
-12. `_12_exercices` — apply everything in a real exercise
+12. `_13_intro_oop` — classes, objects, static vs instance, scope and encapsulation
+13. `_12_exercices` — apply everything in a real exercise
